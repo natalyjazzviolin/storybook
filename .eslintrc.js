@@ -13,6 +13,7 @@ module.exports = {
       // this package uses pre-bundling, dependencies will be bundled, and will be in devDepenencies
       files: [
         '**/lib/theming/**/*',
+        '**/lib/builder-*/**/*',
         '**/lib/router/**/*',
         '**/lib/ui/**/*',
         '**/lib/components/**/*',

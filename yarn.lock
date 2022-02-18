@@ -582,7 +582,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.0.0, @babel/core@npm:^7.17.5":
+"@babel/core@npm:^7.0.0, @babel/core@npm:^7.12.10, @babel/core@npm:^7.17.5":
   version: 7.17.5
   resolution: "@babel/core@npm:7.17.5"
   dependencies:

@@ -39,6 +39,7 @@
     "prepare": "node ../../scripts/prepare.js"
   },
   "dependencies": {
+    "@babel/core": "^7.0.0",
     "@storybook/addons": "6.5.0-alpha.39",
     "@storybook/api": "6.5.0-alpha.39",
     "@storybook/channel-postmessage": "6.5.0-alpha.39",
@@ -59,8 +60,6 @@
     "@types/webpack": "^4.41.26",
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.0.0",
-    "babel-plugin-macros": "^2.8.0",
-    "babel-plugin-polyfill-corejs3": "^0.1.0",
     "case-sensitive-paths-webpack-plugin": "^2.3.0",
     "core-js": "^3.8.2",
     "css-loader": "^3.6.0",

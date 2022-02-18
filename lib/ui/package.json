@@ -1,6 +1,6 @@
 {
   "name": "@storybook/ui",
-  "version": "6.5.0-alpha.38",
+  "version": "6.5.0-alpha.39",
   "description": "Core Storybook UI",
   "keywords": [
     "storybook"
@@ -40,16 +40,17 @@
     "prepare": "../../node_modules/.bin/ts-node ../../scripts/prepare-prebundle.ts"
   },
   "dependencies": {
-    "@storybook/addons": "6.5.0-alpha.38",
-    "@storybook/api": "6.5.0-alpha.38",
-    "@storybook/channels": "6.5.0-alpha.38",
-    "@storybook/client-logger": "6.5.0-alpha.38",
-    "@storybook/components": "6.5.0-alpha.38",
-    "@storybook/core-events": "6.5.0-alpha.38",
-    "@storybook/router": "6.5.0-alpha.38",
+    "@storybook/addons": "6.5.0-alpha.39",
+    "@storybook/api": "6.5.0-alpha.39",
+    "@storybook/channels": "6.5.0-alpha.39",
+    "@storybook/client-logger": "6.5.0-alpha.39",
+    "@storybook/components": "6.5.0-alpha.39",
+    "@storybook/core-events": "6.5.0-alpha.39",
+    "@storybook/router": "6.5.0-alpha.39",
     "@storybook/semver": "^7.3.2",
-    "@storybook/theming": "6.5.0-alpha.38",
+    "@storybook/theming": "6.5.0-alpha.39",
     "core-js": "^3.8.2",
+    "regenerator-runtime": "^0.13.7",
     "resolve-from": "^5.0.0"
   },
   "devDependencies": {
@@ -70,7 +71,6 @@
     "react-draggable": "^4.4.3",
     "react-helmet-async": "^1.0.7",
     "react-sizeme": "^3.0.1",
-    "regenerator-runtime": "^0.13.7",
     "store2": "^2.12.0",
     "webpack": "4"
   },
@@ -82,6 +82,6 @@
     "access": "public"
   },
   "bundlerEntrypoint": "./src/index.tsx",
-  "gitHead": "b0dd637a70b6b24fbd3b8d9f9df7299511f6ba62",
+  "gitHead": "9b5d9b1f46a31a9881fe71a153a9b810e8203a93",
   "sbmodern": "dist/modern/index.js"
 }

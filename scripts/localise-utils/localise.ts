@@ -23,17 +23,7 @@ export const localize = (reporter: (err: Error) => void, ref: string, input: str
     const renamed = root.replace('node_modules', 'local_modules');
 
     const full = join(renamed, input);
-    // console.log({ packageName, full, input, renamed, resolved });
 
-    // find out the true package name
-    // @storybook/foo
-    // foo
-    // require('foo/bar' + var)
-    // foo/bar
-    // foo
-    // absolute path NOT bar
-    // add bar back
-    // try to recursively try with 1 dirname up
     return full;
   } catch (e) {
     reporter(e);

@@ -25,6 +25,7 @@ interface Options {
   watch?: boolean;
 }
 
+// these packages have really dynamic requires at runtime, or they have some dependency that unresolvable
 const ignoredPackagesWithWarnings = [
   'babel-loader',
   'browserslist',
@@ -200,7 +201,7 @@ const run = async ({ cwd, flags }: { cwd: string; flags: string[] }) => {
     });
 
     await cp('-R', join(location, 'local_modules'), join(cwd, 'dist', 'local_modules'));
-    // await rm('-rf', location);
+    await rm('-rf', location);
   }
 
   await Promise.all([

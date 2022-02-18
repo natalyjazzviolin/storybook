@@ -39,6 +39,7 @@
     "prepare": "../../node_modules/.bin/ts-node ../../scripts/prepare-localise.ts"
   },
   "dependencies": {
+    "@babel/core": "^7.0.0",
     "@storybook/addons": "6.5.0-alpha.38",
     "@storybook/channel-postmessage": "6.5.0-alpha.38",
     "@storybook/client-api": "6.5.0-alpha.38",

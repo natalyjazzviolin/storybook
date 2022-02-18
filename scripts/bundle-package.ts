@@ -33,6 +33,7 @@ export async function build(options: Options, setting: RollupOptions) {
       preferConst: true,
       plugins: [
         getBabelOutputPlugin({
+          compact: false,
           presets: [
             [
               '@babel/preset-env',
@@ -55,6 +56,7 @@ export async function build(options: Options, setting: RollupOptions) {
       sourcemap: optimized,
       plugins: [
         getBabelOutputPlugin({
+          compact: false,
           presets: [
             [
               '@babel/preset-env',
@@ -76,6 +78,7 @@ export async function build(options: Options, setting: RollupOptions) {
 
       plugins: [
         getBabelOutputPlugin({
+          compact: false,
           presets: [
             [
               '@babel/preset-env',
@@ -196,6 +199,7 @@ export async function run({ cwd, flags }: { cwd: string; flags: string[] }) {
           ignoreGlobal: true,
         }),
         babel({
+          compact: false,
           babelHelpers: 'external',
           skipPreflightCheck: true,
         }),

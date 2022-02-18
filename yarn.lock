@@ -582,7 +582,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.0.0, @babel/core@npm:^7.12.10, @babel/core@npm:^7.17.5":
+"@babel/core@npm:^7.0.0, @babel/core@npm:^7.17.5":
   version: 7.17.5
   resolution: "@babel/core@npm:7.17.5"
   dependencies:
@@ -6639,7 +6639,7 @@ __metadata:
   resolution: "@storybook/addon-docs@workspace:addons/docs"
   dependencies:
     "@angular/core": ^11.2.14
-    "@babel/core": ^7.12.10
+    "@babel/core": ^7.0.0
     "@babel/generator": ^7.12.11
     "@babel/parser": ^7.12.11
     "@babel/plugin-transform-react-jsx": ^7.12.12
@@ -6763,7 +6763,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook/addon-essentials@workspace:addons/essentials"
   dependencies:
-    "@babel/core": ^7.12.10
+    "@babel/core": ^7.0.0
     "@storybook/addon-actions": 6.5.0-alpha.39
     "@storybook/addon-backgrounds": 6.5.0-alpha.39
     "@storybook/addon-controls": 6.5.0-alpha.39
@@ -6782,7 +6782,7 @@ __metadata:
     regenerator-runtime: ^0.13.7
     ts-dedent: ^2.0.0
   peerDependencies:
-    "@babel/core": ^7.9.6
+    "@babel/core": ^7.0.0
   peerDependenciesMeta:
     "@storybook/angular":
       optional: true
@@ -7520,7 +7520,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook/cli@workspace:lib/cli"
   dependencies:
-    "@babel/core": ^7.12.10
+    "@babel/core": ^7.0.0
     "@babel/preset-env": ^7.12.11
     "@storybook/client-api": 6.5.0-alpha.39
     "@storybook/codemod": 6.5.0-alpha.39
@@ -7709,7 +7709,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook/core-common@workspace:lib/core-common"
   dependencies:
-    "@babel/core": ^7.12.10
+    "@babel/core": ^7.0.0
     "@babel/plugin-proposal-class-properties": ^7.12.1
     "@babel/plugin-proposal-decorators": ^7.12.12
     "@babel/plugin-proposal-export-default-from": ^7.12.1
@@ -7881,7 +7881,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook/csf-tools@workspace:lib/csf-tools"
   dependencies:
-    "@babel/core": ^7.12.10
+    "@babel/core": ^7.0.0
     "@babel/generator": ^7.12.11
     "@babel/parser": ^7.12.11
     "@babel/plugin-transform-react-jsx": ^7.12.12
@@ -8143,7 +8143,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook/manager-webpack4@workspace:lib/manager-webpack4"
   dependencies:
-    "@babel/core": ^7.12.10
+    "@babel/core": ^7.0.0
     "@babel/plugin-transform-template-literals": ^7.12.1
     "@babel/preset-react": ^7.12.10
     "@storybook/addons": 6.5.0-alpha.39
@@ -8195,7 +8195,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook/manager-webpack5@workspace:lib/manager-webpack5"
   dependencies:
-    "@babel/core": ^7.12.10
+    "@babel/core": ^7.0.0
     "@babel/plugin-transform-template-literals": ^7.12.1
     "@babel/preset-react": ^7.12.10
     "@storybook/addons": 6.5.0-alpha.39
@@ -8415,7 +8415,7 @@ __metadata:
     ts-dedent: ^2.0.0
     webpack: 4
   peerDependencies:
-    "@babel/core": ^7.11.5
+    "@babel/core": ^7.0.0
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
   peerDependenciesMeta:
@@ -8914,7 +8914,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook/ui@workspace:lib/ui"
   dependencies:
-    "@babel/core": ^7.12.10
+    "@babel/core": ^7.0.0
     "@storybook/addons": 6.5.0-alpha.39
     "@storybook/api": 6.5.0-alpha.39
     "@storybook/channels": 6.5.0-alpha.39
@@ -20476,7 +20476,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ember-example@workspace:examples/ember-cli"
   dependencies:
-    "@babel/core": ^7.12.10
+    "@babel/core": ^7.0.0
     "@ember/optional-features": ^2.0.0
     "@storybook/addon-a11y": 6.5.0-alpha.39
     "@storybook/addon-actions": 6.5.0-alpha.39
@@ -36192,7 +36192,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "preact-example@workspace:examples/preact-kitchen-sink"
   dependencies:
-    "@babel/core": ^7.12.10
+    "@babel/core": ^7.0.0
     "@babel/plugin-transform-runtime": ^7.12.10
     "@storybook/addon-a11y": 6.5.0-alpha.39
     "@storybook/addon-actions": 6.5.0-alpha.39
@@ -45128,7 +45128,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vue-3-cli-example@workspace:examples/vue-3-cli"
   dependencies:
-    "@babel/core": ^7.12.10
+    "@babel/core": ^7.0.0
     "@storybook/addon-actions": 6.5.0-alpha.39
     "@storybook/addon-essentials": 6.5.0-alpha.39
     "@storybook/addon-interactions": 6.5.0-alpha.39
@@ -45218,7 +45218,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vue-example@workspace:examples/vue-kitchen-sink"
   dependencies:
-    "@babel/core": ^7.12.10
+    "@babel/core": ^7.0.0
     "@storybook/addon-a11y": 6.5.0-alpha.39
     "@storybook/addon-actions": 6.5.0-alpha.39
     "@storybook/addon-backgrounds": 6.5.0-alpha.39

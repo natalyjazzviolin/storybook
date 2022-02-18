@@ -45,7 +45,7 @@
     "test": "jest test/**/*.test.js"
   },
   "dependencies": {
-    "@babel/core": "^7.12.10",
+    "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.12.11",
     "@storybook/codemod": "6.5.0-alpha.39",
     "@storybook/core-common": "6.5.0-alpha.39",

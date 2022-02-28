@@ -11,10 +11,10 @@ import { command } from 'execa';
 import { cp, rm } from 'shelljs';
 import glob from 'glob-promise';
 import { transformFileAsync } from '@babel/core';
-import { rollupModulesLocalisePlugin } from './localise-utils/rollup-modules-localise-plugin';
+import { rollupModulesLocalisePlugin } from './localize-utils/rollup-modules-localize-plugin';
 import * as prebundle from './bundle-package';
-import { babelModulesLocalizerPlugin } from './localise-utils/babel-modules-localise-plugin';
-import { localize } from './localise-utils/localise';
+import { babelModulesLocalizePlugin } from './localize-utils/babel-modules-localize-plugin';
+import { localize } from './localize-utils/localize';
 
 interface Options {
   input: string;
@@ -182,7 +182,7 @@ const run = async ({ cwd, flags }: { cwd: string; flags: string[] }) => {
           // needed for watchpack/lib/chokidar.js
           allowReturnOutsideFunction: true,
         },
-        plugins: [babelModulesLocalizerPlugin(localize.bind(null, reporter, ref), reporter)],
+        plugins: [babelModulesLocalizePlugin(localize.bind(null, reporter, ref), reporter)],
       })
         .then(({ code }) => {
           return writeFile(ref, code);

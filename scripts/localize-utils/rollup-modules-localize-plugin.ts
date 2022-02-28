@@ -1,10 +1,10 @@
 import type { Plugin, TransformPluginContext } from 'rollup';
 import { transformAsync } from '@babel/core';
-import { babelModulesLocalizerPlugin } from './babel-modules-localise-plugin';
-import { getPackageName } from './localise';
+import { babelModulesLocalizePlugin } from './babel-modules-localize-plugin';
+import { getPackageName } from './localize';
 
 export const rollupModulesLocalisePlugin = (externals: string[]): Plugin => {
-  function localise(this: TransformPluginContext, from: string, required: string) {
+  function localize(this: TransformPluginContext, from: string, required: string) {
     const packageName = getPackageName(required);
 
     if (externals.includes(packageName)) {
@@ -16,7 +16,7 @@ export const rollupModulesLocalisePlugin = (externals: string[]): Plugin => {
 
   async function transform(this: TransformPluginContext, code: string, id: string) {
     const out = await transformAsync(code, {
-      plugins: [babelModulesLocalizerPlugin(localise.bind(this, id))],
+      plugins: [babelModulesLocalizePlugin(localize.bind(this, id))],
     });
     return {
       code: out.code,
@@ -25,7 +25,7 @@ export const rollupModulesLocalisePlugin = (externals: string[]): Plugin => {
   }
 
   return {
-    name: 'rollup-modules-localise-plugin',
+    name: 'rollup-modules-localize-plugin',
     transform,
   };
 };

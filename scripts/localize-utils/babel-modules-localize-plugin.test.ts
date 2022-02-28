@@ -1,6 +1,6 @@
 import dedent from 'ts-dedent';
 import { transformAsync } from '@babel/core';
-import { babelModulesLocalizerPlugin } from './babel-modules-localise-plugin';
+import { babelModulesLocalizePlugin } from './babel-modules-localize-plugin';
 
 expect.addSnapshotSerializer({
   print: (val: any) => val,
@@ -8,7 +8,8 @@ expect.addSnapshotSerializer({
 });
 
 const localize = (required: string) => {
-  // TODO actual resolve and make path relative
+  // The implementation of the localise function is not important for the test, just that the function is used
+  // which we test by asserting the output matches the snapshots
   return `./${required}`;
 };
 
@@ -18,7 +19,7 @@ const transform = async (input: string) => {
     plugins: [
       //
       '@babel/plugin-proposal-export-default-from',
-      babelModulesLocalizerPlugin(localize),
+      babelModulesLocalizePlugin(localize),
     ],
   });
   return code;

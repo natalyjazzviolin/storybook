@@ -1,7 +1,7 @@
 import builtins from 'builtin-modules';
 import { PluginObj } from '@babel/core';
 import * as t from '@babel/types';
-import { getPackageName } from './localise';
+import { getPackageName } from './localize';
 
 function filterObject(obj: Record<string, any>, keys: string[]) {
   Object.keys(obj).forEach((key) => {
@@ -16,7 +16,7 @@ function filterObject(obj: Record<string, any>, keys: string[]) {
   return obj;
 }
 
-export const babelModulesLocalizerPlugin = (
+export const babelModulesLocalizePlugin = (
   localise: (p: string) => string,
   report = (err: Error): void => {
     throw err;
@@ -98,7 +98,7 @@ export const babelModulesLocalizerPlugin = (
   };
 
   return {
-    name: 'custom-localization-plugin',
+    name: 'babel-modules-localize-plugin',
     visitor: {
       ImportDeclaration: (p) => {
         if (t.isStringLiteral(p.node.source)) {

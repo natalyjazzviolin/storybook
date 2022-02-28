@@ -1,5 +1,5 @@
 import resolveFrom from 'resolve-from';
-import { localize, getPackageName } from './localise';
+import { localize, getPackageName } from './localize';
 
 jest.mock('resolve-from', () =>
   jest.fn((from: string, to: string) => `/projects/dist/node_modules/${to}`)

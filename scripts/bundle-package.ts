@@ -12,7 +12,7 @@ import { babel, getBabelOutputPlugin } from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import { generateDtsBundle } from 'dts-bundle-generator';
 import builtins from 'builtin-modules';
-import * as dtsLozalize from './localise-utils/dts-localize';
+import * as dtsLozalize from './localize-utils/dts-localize';
 
 interface Options {
   input: string;

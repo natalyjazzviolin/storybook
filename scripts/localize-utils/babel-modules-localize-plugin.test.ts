@@ -36,6 +36,24 @@ describe('prepare-localize', () => {
       );
     });
 
+    it('local file with extension', async () => {
+      const input = dedent`
+        const foo = require('./foo.png');
+      `;
+      await expect(transform(input)).resolves.toMatchInlineSnapshot(
+        `const foo = require('./foo.png');`
+      );
+    });
+
+    it('local file with path', async () => {
+      const input = dedent`
+        const foo = require('./foo/image.png');
+      `;
+      await expect(transform(input)).resolves.toMatchInlineSnapshot(
+        `const foo = require('./foo/image.png');`
+      );
+    });
+
     it('package', async () => {
       const input = dedent`
         const foo = require('foo');

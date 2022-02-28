@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-env": "^7.0.0",
     "@storybook/codemod": "6.5.0-alpha.44",
     "@storybook/core-common": "6.5.0-alpha.44",
     "@storybook/csf-tools": "6.5.0-alpha.44",

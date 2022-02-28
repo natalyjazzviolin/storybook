@@ -46,8 +46,8 @@
     "prepare": "node ../../scripts/prepare.js"
   },
   "dependencies": {
-    "@babel/preset-flow": "^7.12.1",
-    "@babel/preset-react": "^7.12.10",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@storybook/addons": "6.5.0-alpha.44",
     "@storybook/core": "6.5.0-alpha.44",

@@ -47,9 +47,9 @@
     "prepare": "node ../../scripts/prepare.js"
   },
   "dependencies": {
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/plugin-syntax-import-meta": "^7.10.4",
-    "@babel/preset-env": "^7.12.11",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
     "@storybook/addons": "6.5.0-alpha.44",
     "@storybook/client-api": "6.5.0-alpha.44",
     "@storybook/core": "6.5.0-alpha.44",

@@ -43,8 +43,8 @@
   },
   "dependencies": {
     "@babel/core": "^7.0.0",
-    "@babel/plugin-transform-template-literals": "^7.12.1",
-    "@babel/preset-react": "^7.12.10",
+    "@babel/plugin-transform-template-literals": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
     "@storybook/addons": "6.5.0-alpha.44",
     "@storybook/core-client": "6.5.0-alpha.44",
     "@storybook/core-common": "6.5.0-alpha.44",
